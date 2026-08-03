@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", "Roboto", "Helvetica Neue", sans-serif;
+}
+
+@layer utilities {
+  /* custom utilities can go here */
+}
