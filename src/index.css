@@ -1,7 +1,21 @@
 @import "tailwindcss";
 
 @theme {
-  --font-sans: "Inter", "Roboto", "Helvetica Neue", sans-serif;
+  --font-sans: "Geist", "Inter", "Roboto", "Helvetica Neue", sans-serif;
+  --font-display: "Special Elite", serif;
+  
+  --color-wandor-dark: #0f766e; /* Using teal-700 instead of #0a0a0a */
+  --color-wandor-text: #0f766e; /* Using teal-700 for text to fit Wanderlust */
+  --color-wandor-muted: #115e59; /* Using teal-800 for muted */
+  --color-wandor-prompt: #0d9488; /* Using teal-600 */
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    background: #fff;
+  }
 }
 
 @layer utilities {
