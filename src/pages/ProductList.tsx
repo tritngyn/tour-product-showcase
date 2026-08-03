@@ -58,8 +58,8 @@ export const ProductList = () => {
   return (
     <div className="space-y-6 pb-20">
       <div>
-        <h1 className="text-3xl font-bold text-gray-900 mb-2">Khám phá thế giới</h1>
-        <p className="text-gray-500">Tìm kiếm và lên kế hoạch cho chuyến đi tiếp theo của bạn.</p>
+        <h1 className="font-sans text-[36px] font-bold text-[var(--color-wandor-text)] leading-tight tracking-[-0.04em] mb-2">Khám phá thế giới</h1>
+        <p className="font-sans text-[17px] text-[var(--color-wandor-muted)]">Tìm kiếm và lên kế hoạch cho chuyến đi tiếp theo của bạn.</p>
       </div>
 
       <TourFilters 

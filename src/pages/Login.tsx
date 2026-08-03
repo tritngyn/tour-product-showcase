@@ -43,7 +43,7 @@ export const Login = () => {
         <div className="relative z-10 p-16 flex flex-col justify-end h-full text-white">
           <div className="mb-8">
             <Compass size={48} className="text-teal-400 mb-6" />
-            <h2 className="text-5xl font-bold mb-6 leading-tight">Khám phá thế giới<br />cùng Wanderlust.</h2>
+            <h2 className="text-5xl font-bold mb-6 leading-tight">Khám phá thế giới<br />cùng vivu.</h2>
             <p className="text-lg text-teal-50 max-w-md font-light leading-relaxed">
               Bắt đầu hành trình của bạn ngay hôm nay. Hàng ngàn điểm đến tuyệt đẹp và trải nghiệm độc đáo đang chờ đón bạn khám phá.
             </p>
@@ -59,7 +59,7 @@ export const Login = () => {
               <Compass size={32} className="rotate-6" />
             </div>
             <h2 className="text-3xl font-bold text-gray-900 tracking-tight">Đăng nhập</h2>
-            <p className="text-sm text-gray-500 mt-3">Chào mừng bạn quay trở lại với Wanderlust</p>
+            <p className="text-sm text-gray-500 mt-3">Chào mừng bạn quay trở lại với vivu.</p>
           </div>
 
           <form className="space-y-6 mt-8" onSubmit={handleSubmit}>
@@ -82,7 +82,7 @@ export const Login = () => {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     className="block w-full pl-11 pr-4 py-3.5 border border-gray-200 rounded-xl focus:ring-4 focus:ring-teal-600/10 focus:border-teal-600 transition-all sm:text-sm bg-gray-50/50 hover:bg-gray-50 focus:bg-white outline-none"
-                    placeholder="admin@wanderlust.com"
+                    placeholder="admin@vivu.com"
                   />
                 </div>
               </div>

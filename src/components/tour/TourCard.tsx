@@ -16,7 +16,7 @@ export const TourCard = ({ tour }: TourCardProps) => {
   }).format(tour.price);
 
   return (
-    <div className="group bg-white rounded-2xl shadow-sm hover:shadow-xl transition-all duration-300 border border-gray-100 overflow-hidden flex flex-col h-full cursor-pointer" onClick={() => navigate(`/tours/${tour.id}`)}>
+    <div className="group bg-white rounded-[32px] shadow-[0_4px_24px_0_rgba(0,0,0,0.04)] hover:shadow-[0_8px_32px_0_rgba(15,118,110,0.15)] hover:-translate-y-1 transition-all duration-300 border border-gray-100/50 overflow-hidden flex flex-col h-full cursor-pointer" onClick={() => navigate(`/tours/${tour.id}`)}>
       {/* Image container */}
       <div className="relative aspect-[4/3] overflow-hidden">
         <img 
@@ -40,11 +40,11 @@ export const TourCard = ({ tour }: TourCardProps) => {
           <span className="uppercase tracking-wider font-semibold">{tour.destination}</span>
         </div>
         
-        <h3 className="text-lg font-bold text-gray-900 leading-tight mb-2 line-clamp-2 group-hover:text-teal-600 transition-colors">
+        <h3 className="font-sans text-xl font-bold text-[var(--color-wandor-text)] leading-tight mb-2 line-clamp-2 group-hover:text-teal-600 transition-colors tracking-tight">
           {tour.name}
         </h3>
         
-        <p className="text-sm text-gray-600 line-clamp-2 mb-4 flex-1">
+        <p className="font-sans text-[15px] text-[var(--color-wandor-muted)] line-clamp-2 mb-4 flex-1">
           {tour.description}
         </p>
 
@@ -55,7 +55,7 @@ export const TourCard = ({ tour }: TourCardProps) => {
             <p className="text-lg font-black text-orange-600">{formattedPrice}</p>
           </div>
           <button 
-            className="w-10 h-10 rounded-full bg-teal-50 text-teal-600 flex items-center justify-center group-hover:bg-teal-600 group-hover:text-white transition-colors"
+            className="w-11 h-11 rounded-full bg-teal-50 text-[var(--color-wandor-dark)] flex items-center justify-center group-hover:bg-[var(--color-wandor-dark)] group-hover:text-white transition-all active:scale-95 shadow-sm"
             aria-label="Xem chi tiết"
           >
             <ArrowRight size={20} />

@@ -36,21 +36,8 @@ export const Hero = () => {
         <nav className="flex items-center justify-between px-20 pt-6 pb-4 max-md:px-6 max-md:pt-5">
           {/* Left: wordmark */}
           <span className="font-display text-[40px] max-md:text-[32px] text-black leading-none select-none">
-            wanderlust.
+            vivu.
           </span>
-
-          {/* Center links (hidden on mobile) */}
-          <div className="absolute left-1/2 -translate-x-1/2 flex gap-8 max-md:hidden">
-            <button className="bg-transparent border-none cursor-pointer font-sans text-[15px] font-medium uppercase text-[var(--color-wandor-text)] tracking-[0.04em] transition-opacity hover:opacity-55">
-              Khám phá
-            </button>
-            <button className="bg-transparent border-none cursor-pointer font-sans text-[15px] font-medium uppercase text-[var(--color-wandor-text)] tracking-[0.04em] transition-opacity hover:opacity-55">
-              Bảng giá
-            </button>
-            <button className="bg-transparent border-none cursor-pointer font-sans text-[15px] font-medium uppercase text-[var(--color-wandor-text)] tracking-[0.04em] transition-opacity hover:opacity-55">
-              Hỏi đáp
-            </button>
-          </div>
 
           {/* Right: Login & CTA */}
           <div className="flex items-center gap-8">
@@ -75,7 +62,7 @@ export const Hero = () => {
             Bạn muốn đi đâu tiếp theo?
           </h1>
           <p className="font-sans text-xl font-medium text-[var(--color-wandor-muted)] leading-relaxed max-w-[500px] mb-10">
-            Hãy để Wanderlust đồng hành cùng bạn trên mọi nẻo đường. Đặt tour ngay hôm nay để nhận ưu đãi hấp dẫn.
+            Hãy để vivu. đồng hành cùng bạn trên mọi nẻo đường. Đặt tour ngay hôm nay để nhận ưu đãi hấp dẫn.
           </p>
 
           {/* Liquid glass PR card */}

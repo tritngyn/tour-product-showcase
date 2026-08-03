@@ -29,13 +29,13 @@ export const Header = () => {
           <div className="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center text-white shadow-md shadow-teal-600/20">
             <Compass size={24} />
           </div>
-          <span className="font-bold text-xl text-gray-900 tracking-tight">Wanderlust<span className="text-teal-600">.</span></span>
+          <span className="font-bold text-xl text-gray-900 tracking-tight font-display">vivu<span className="text-teal-600">.</span></span>
         </div>
         <button 
           onClick={handleLogout}
-          className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-gray-600 hover:text-red-600 hover:bg-red-50 rounded-lg transition-colors group"
+          className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-[var(--color-wandor-muted)] uppercase tracking-[0.04em] transition-opacity hover:opacity-55"
         >
-          <LogOut size={18} className="group-hover:-translate-x-1 transition-transform" />
+          <LogOut size={18} />
           <span className="hidden sm:inline">Đăng xuất</span>
         </button>
       </div>
