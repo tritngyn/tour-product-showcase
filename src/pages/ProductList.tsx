@@ -10,7 +10,7 @@ export const ProductList = () => {
   
   const [searchQuery, setSearchQuery] = useState('');
   const [priceFilter, setPriceFilter] = useState('all');
-  const [categoryFilter, setCategoryFilter] = useState('all');
+  const [durationFilter, setDurationFilter] = useState('all');
   
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 12;
@@ -18,7 +18,7 @@ export const ProductList = () => {
   // Reset về trang 1 khi đổi filter
   useEffect(() => {
     setCurrentPage(1);
-  }, [searchQuery, priceFilter, categoryFilter]);
+  }, [searchQuery, priceFilter, durationFilter]);
 
   const filteredTours = useMemo(() => {
     return tours.filter(tour => {
@@ -26,23 +26,31 @@ export const ProductList = () => {
       const q = searchQuery.toLowerCase();
       const matchesSearch = tour.name.toLowerCase().includes(q) || tour.destination.toLowerCase().includes(q);
       
-      // 2. Category filter
-      const matchesCategory = categoryFilter === 'all' || tour.category === categoryFilter;
-      
-      // 3. Price filter
+      // 2. Price filter
       let matchesPrice = true;
       if (priceFilter === '<3') matchesPrice = tour.price < 3000000;
       else if (priceFilter === '3-5') matchesPrice = tour.price >= 3000000 && tour.price <= 5000000;
       else if (priceFilter === '>5') matchesPrice = tour.price > 5000000;
 
-      return matchesSearch && matchesCategory && matchesPrice;
+      // 3. Duration filter
+      let matchesDuration = true;
+      if (durationFilter !== 'all') {
+        const daysMatch = tour.duration.match(/(\d+)\s*ngày/i);
+        const days = daysMatch ? parseInt(daysMatch[1], 10) : 1; // Default to 1 day if can't parse
+        
+        if (durationFilter === 'short') matchesDuration = days <= 3;
+        else if (durationFilter === 'medium') matchesDuration = days >= 4 && days <= 7;
+        else if (durationFilter === 'long') matchesDuration = days > 7;
+      }
+
+      return matchesSearch && matchesPrice && matchesDuration;
     });
-  }, [tours, searchQuery, priceFilter, categoryFilter]);
+  }, [tours, searchQuery, priceFilter, durationFilter]);
 
   const handleClearFilters = () => {
     setSearchQuery('');
     setPriceFilter('all');
-    setCategoryFilter('all');
+    setDurationFilter('all');
     setCurrentPage(1);
   };
 
@@ -73,14 +81,14 @@ export const ProductList = () => {
   return (
     <div className="space-y-6 pb-20">
       <div>
-        <h1 className="font-sans text-[36px] font-bold text-[var(--color-wandor-text)] leading-tight tracking-[-0.04em] mb-2">Khám phá thế giới</h1>
-        <p className="font-sans text-[17px] text-[var(--color-wandor-muted)]">Tìm kiếm và lên kế hoạch cho chuyến đi tiếp theo của bạn.</p>
+        <h1 className="font-sans text-[28px] sm:text-[36px] font-bold text-[var(--color-wandor-text)] leading-tight tracking-[-0.04em] mb-1 sm:mb-2">Khám phá thế giới</h1>
+        <p className="font-sans text-[15px] sm:text-[17px] text-[var(--color-wandor-muted)]">Tìm kiếm và lên kế hoạch cho chuyến đi tiếp theo của bạn.</p>
       </div>
 
       <TourFilters 
         searchQuery={searchQuery} setSearchQuery={setSearchQuery}
         priceFilter={priceFilter} setPriceFilter={setPriceFilter}
-        categoryFilter={categoryFilter} setCategoryFilter={setCategoryFilter}
+        durationFilter={durationFilter} setDurationFilter={setDurationFilter}
       />
 
       {filteredTours.length > 0 ? (

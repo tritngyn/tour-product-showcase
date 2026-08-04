@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  mock-api:
+    image: mockoon/cli:latest
+    # Command arguments appended to the entrypoint "mockoon-cli start"
+    command: ["--data", "/data/mockoon-data.json", "--port", "3000"]
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./mockoon-data.json:/data/mockoon-data.json:ro
+
+  frontend:
+    build:
+      context: .
+      args:
+        # The browser will use this URL to contact the Mock API.
+        # Since it runs on the host's browser, localhost:3000 resolves correctly to the mapped mock-api port.
+        VITE_API_URL: "http://localhost:3000/api"
+    ports:
+      - "8080:80"
+    depends_on:
+      - mock-api

@@ -13,23 +13,23 @@ export const Home = () => {
   const domesticTours = tours;
 
   const CarouselSection = ({ title, data }: { title: string, data: typeof tours }) => (
-    <div className="py-12 border-b border-gray-100 last:border-0">
-      <div className="max-w-[1360px] mx-auto px-6 mb-8 flex items-center justify-between">
-        <h2 className="text-3xl font-bold text-gray-900 tracking-tight">{title}</h2>
+    <div className="py-8 sm:py-12 border-b border-gray-100 last:border-0">
+      <div className="max-w-[1360px] mx-auto px-4 sm:px-6 mb-6 sm:mb-8 flex items-center justify-between">
+        <h2 className="text-2xl sm:text-3xl font-bold text-gray-900 tracking-tight">{title}</h2>
         <button 
           onClick={() => navigate('/tours')}
-          className="flex items-center gap-2 text-teal-600 font-semibold hover:text-teal-700 transition-colors"
+          className="flex items-center gap-1 sm:gap-2 text-teal-600 font-semibold hover:text-teal-700 transition-colors text-sm sm:text-base whitespace-nowrap"
         >
-          Xem tất cả <ArrowRight size={18} />
+          Xem tất cả <ArrowRight size={18} className="w-4 h-4 sm:w-[18px] sm:h-[18px]" />
         </button>
       </div>
       
       {/* Horizontal Scroll Container */}
       <div className="w-full overflow-hidden">
-        <div className="max-w-[1360px] mx-auto px-6">
-          <div className="flex gap-6 overflow-x-auto snap-x snap-mandatory pb-8 pt-2 [&::-webkit-scrollbar]:hidden" style={{ scrollbarWidth: 'none' }}>
+        <div className="max-w-[1360px] mx-auto px-4 sm:px-6">
+          <div className="flex gap-4 sm:gap-6 overflow-x-auto snap-x snap-mandatory pb-8 pt-2 [&::-webkit-scrollbar]:hidden" style={{ scrollbarWidth: 'none' }}>
             {data.map(tour => (
-              <div key={tour.id} className="min-w-[280px] sm:min-w-[320px] max-w-[320px] snap-start flex-shrink-0">
+              <div key={tour.id} className="w-[85vw] sm:w-auto min-w-[280px] sm:min-w-[320px] max-w-[320px] snap-start flex-shrink-0">
                 <TourCard tour={tour} />
               </div>
             ))}

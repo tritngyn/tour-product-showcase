@@ -84,26 +84,26 @@ export const ProductDetail = () => {
       </button>
 
       {/* Header Info */}
-      <div className="mb-8">
+      <div className="mb-6 sm:mb-8">
         <div className="flex flex-wrap items-center gap-2 sm:gap-4 mb-3">
-          <span className="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-sm font-bold uppercase tracking-wide">
+          <span className="bg-teal-50 text-teal-700 px-3 py-1 rounded-full text-xs sm:text-sm font-bold uppercase tracking-wide">
             {tour.category}
           </span>
           {tour.rating && (
-            <div className="flex items-center gap-1 font-semibold">
-              <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+            <div className="flex items-center gap-1 font-semibold text-sm sm:text-base">
+              <Star className="w-4 h-4 sm:w-5 sm:h-5 fill-yellow-400 text-yellow-400" />
               <span className="text-gray-900">{tour.rating}</span>
               <span className="text-gray-500 font-normal">({tour.reviewCount} đánh giá)</span>
             </div>
           )}
-          <div className="flex items-center gap-1.5 text-gray-500 font-semibold">
-            <MapPin size={18} /> {tour.destination}
+          <div className="flex items-center gap-1 sm:gap-1.5 text-gray-500 font-semibold text-sm sm:text-base">
+            <MapPin size={16} className="sm:w-[18px] sm:h-[18px]" /> {tour.destination}
           </div>
-          <div className="flex items-center gap-1.5 text-gray-500 font-semibold">
-            <Calendar size={18} /> {tour.duration}
+          <div className="flex items-center gap-1 sm:gap-1.5 text-gray-500 font-semibold text-sm sm:text-base">
+            <Calendar size={16} className="sm:w-[18px] sm:h-[18px]" /> {tour.duration}
           </div>
         </div>
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
           {tour.name}
         </h1>
       </div>
@@ -119,14 +119,18 @@ export const ProductDetail = () => {
                 <img src={images[0]} alt={tour.name} className="w-full h-full object-cover cursor-pointer hover:scale-105 transition-transform duration-500" />
               </div>
             ) : (
-              <div className="grid grid-cols-5 gap-2 h-[400px]">
+              <div className="grid grid-cols-1 md:grid-cols-5 gap-2 h-[250px] sm:h-[350px] md:h-[400px]">
                 {/* Main image */}
-                <div className="col-span-3 relative group cursor-pointer overflow-hidden" onClick={() => openGallery(0)}>
+                <div className="col-span-1 md:col-span-3 relative group cursor-pointer overflow-hidden" onClick={() => openGallery(0)}>
                   <img src={images[0]} alt="Main" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-black/10 opacity-0 group-hover:opacity-100 transition-opacity" />
+                  {/* Mobile indicator for more images */}
+                  <div className="md:hidden absolute bottom-4 right-4 bg-black/60 backdrop-blur-md px-3 py-1.5 rounded-full text-white text-sm font-semibold flex items-center gap-1.5">
+                    <Grid size={16} /> 1/{images.length}
+                  </div>
                 </div>
-                {/* 4 small images */}
-                <div className="col-span-2 grid grid-cols-2 gap-2">
+                {/* 4 small images - Hidden on mobile */}
+                <div className="hidden md:grid col-span-2 grid-cols-2 gap-2">
                   {images.slice(1, 4).map((img: string, idx: number) => (
                     <div key={idx} className="relative group cursor-pointer overflow-hidden" onClick={() => openGallery(idx + 1)}>
                       <img src={img} alt={`Img ${idx}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
