@@ -26,6 +26,13 @@ COPY --from=builder /app/dist /usr/share/nginx/html
 # Create a custom Nginx configuration for React Router (Single Page Application fallback)
 RUN echo 'server { \
     listen 80; \
+    include /etc/nginx/mime.types; \
+    location ~ \.mp4$ { \
+        root /usr/share/nginx/html; \
+        types { video/mp4 mp4; } \
+        default_type video/mp4; \
+        add_header Content-Type video/mp4; \
+    } \
     location / { \
         root /usr/share/nginx/html; \
         index index.html index.htm; \

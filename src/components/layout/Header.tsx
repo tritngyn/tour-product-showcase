@@ -20,7 +20,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="bg-white/80 backdrop-blur-xl border-b border-gray-100 sticky top-0 z-50 transition-all shadow-sm">
+    <header className="bg-white/85 backdrop-blur-xl border border-white/60 sticky top-4 sm:top-6 z-50 transition-all shadow-[0_8px_32px_0_rgba(0,0,0,0.08)] rounded-[24px] sm:rounded-full mx-4 sm:mx-8 mt-4 sm:mt-6">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <div 
           className="flex items-center gap-2 sm:gap-3 cursor-pointer transition-transform hover:scale-105" 

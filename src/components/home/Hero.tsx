@@ -14,21 +14,12 @@ export const Hero = () => {
   };
 
   return (
-    <section className="relative min-h-svh w-full overflow-hidden">
-      {/* Background video (z-0) */}
-      <video
-        autoPlay
-        muted
-        loop
-        playsInline
+    <section className="relative min-h-[calc(100svh-24px)] sm:min-h-[calc(100svh-48px)] w-[calc(100%-24px)] sm:w-[calc(100%-48px)] mx-auto mt-3 sm:mt-6 overflow-hidden rounded-[32px] sm:rounded-[48px] shadow-2xl">
+      {/* Background image (z-0) */}
+      <img
         className="absolute inset-0 w-full h-full object-cover z-0"
-        src="/hero-bg.mp4"
-      />
-
-      {/* Top gradient overlay (z-1) */}
-      <div 
-        className="absolute inset-x-0 top-0 h-[687px] pointer-events-none z-[1]"
-        style={{ background: 'linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%)' }}
+        src="/vaskar-sam-xRw_N4Bgfos-unsplash.jpg"
+        alt="Travel Background"
       />
 
       {/* Content wrapper (z-2) */}
