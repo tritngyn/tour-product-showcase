@@ -22,6 +22,7 @@ export const TourCard = ({ tour }: TourCardProps) => {
         <img 
           src={tour.image} 
           alt={tour.name}
+          loading="lazy"
           className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
         />
         <div className="absolute top-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-bold text-teal-700 shadow-sm">

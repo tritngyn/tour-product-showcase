@@ -20,24 +20,30 @@ export const Header = () => {
   };
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+    <header className="bg-white/80 backdrop-blur-xl border-b border-gray-100 sticky top-0 z-50 transition-all shadow-sm">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
         <div 
-          className="flex items-center gap-2 cursor-pointer transition-transform hover:scale-105" 
+          className="flex items-center gap-3 cursor-pointer transition-transform hover:scale-105" 
           onClick={() => navigate('/')}
         >
-          <div className="w-10 h-10 bg-teal-600 rounded-full flex items-center justify-center text-white shadow-md shadow-teal-600/20">
-            <Compass size={24} />
+          <div className="w-12 h-12 bg-gradient-to-tr from-teal-600 to-teal-400 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-teal-600/30 transform -rotate-6">
+            <Compass size={28} className="rotate-6" />
           </div>
-          <span className="font-bold text-xl text-gray-900 tracking-tight font-display">vivu<span className="text-teal-600">.</span></span>
+          <span className="font-bold text-2xl text-gray-900 tracking-tight font-display">vivu<span className="text-teal-600">.</span></span>
         </div>
-        <button 
-          onClick={handleLogout}
-          className="flex items-center gap-2 px-4 py-2 text-sm font-semibold text-[var(--color-wandor-muted)] uppercase tracking-[0.04em] transition-opacity hover:opacity-55"
-        >
-          <LogOut size={18} />
-          <span className="hidden sm:inline">Đăng xuất</span>
-        </button>
+        
+        <div className="flex items-center gap-4">
+          <div className="hidden sm:block text-sm font-medium text-gray-500 mr-4">
+            Xin chào, Admin
+          </div>
+          <button 
+            onClick={handleLogout}
+            className="flex items-center gap-2 px-6 py-2.5 rounded-full bg-teal-50 text-teal-700 text-sm font-bold tracking-wide transition-all hover:bg-teal-100 hover:scale-105 active:scale-95 shadow-sm"
+          >
+            <LogOut size={18} />
+            <span className="hidden sm:inline">Đăng xuất</span>
+          </button>
+        </div>
       </div>
     </header>
   );
