@@ -1,7 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../store/useAuthStore';
 import { api } from '../../lib/axios';
-import { LogOut, Compass } from 'lucide-react';
+import { LogOut } from 'lucide-react';
 
 export const Header = () => {
   const { isAuthenticated, logout } = useAuthStore();
