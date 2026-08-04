@@ -13,10 +13,6 @@ services:
   frontend:
     build:
       context: .
-      args:
-        # The browser will use this URL to contact the Mock API.
-        # Since it runs on the host's browser, localhost:3000 resolves correctly to the mapped mock-api port.
-        VITE_API_URL: "http://localhost:3000/api"
     ports:
       - "8080:80"
     depends_on:

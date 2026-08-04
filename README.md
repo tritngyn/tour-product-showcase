@@ -1,77 +1,44 @@
-# React + TypeScript + Vite
+# vivu. - Product Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Dự án giới thiệu sản phẩm (Showcase Application) dành cho ứng viên ứng tuyển vào GEEK UP. Trang web là một nền tảng khám phá các tour du lịch đa dạng, trải nghiệm mượt mà với UI/UX hiện đại (giao diện Liquid Glass).
 
-Currently, two official plugins are available:
+## Tech Stack
+- **Frontend:** React 19, TypeScript, Vite
+- **Styling:** Tailwind CSS (v4), Vanilla CSS (tasteskill UI)
+- **State Management:** Zustand
+- **Routing:** React Router DOM (v7)
+- **Icons:** Lucide React
+- **Mock API:** Mockoon
+- **Deployment:** Docker & Nginx
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## Cài đặt và Chạy cục bộ (Local)
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+### 1. Khởi động Mock API
+1. Tải và cài đặt ứng dụng [Mockoon Desktop](https://mockoon.com/).
+2. Mở Mockoon, chọn `File` -> `Open environment` và chọn file `mockoon-data.json` ở thư mục gốc của dự án.
+3. Bấm nút **Play** màu xanh lá để khởi động server mô phỏng ở cổng `3000`.
 
-Note: This will impact Vite dev & build performances.
+### 2. Khởi động Frontend
+Mở terminal tại thư mục gốc của dự án, cài đặt thư viện và khởi động máy chủ ảo:
+```bash
+npm install
+npm run dev
+```
+Trình duyệt sẽ tự động mở trang web (thường ở địa chỉ `http://localhost:5173`).
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Triển khai với Docker Compose (Production Ready)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Chỉ cần một lệnh duy nhất để tự động đóng gói và chạy cả Frontend và Mock API trong các Container độc lập:
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+docker-compose up --build -d
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+- **Giao diện Web (Frontend):** Truy cập 👉 `http://localhost:8080`
+- **Dữ liệu Mock (Backend API):** Kiểm tra tại 👉 `http://localhost:3000/api/tours`
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
-```
+*(Đảm bảo bạn đã tắt các ứng dụng chiếm cổng 3000 hoặc 8080 trên máy tính trước khi chạy lệnh Docker này).*

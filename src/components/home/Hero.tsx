@@ -22,7 +22,7 @@ export const Hero = () => {
         loop
         playsInline
         className="absolute inset-0 w-full h-full object-cover z-0"
-        src="https://pollen-batch-41236914.figma.site/_components/v2/f0ee2dae7671c170c34f12e31c4cb41418976c98/769c564298c132f7919405cd9f17c1b1231f341d.769c5642.mp4"
+        src="/hero-bg.mp4"
       />
 
       {/* Top gradient overlay (z-1) */}
