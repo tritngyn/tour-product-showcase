@@ -47,11 +47,7 @@ export const toursData = {
       "https://bcp.cdnchinhphu.vn/344443456812359680/2025/5/31/hanoi-17486566616582033334984.jpg",
       "https://res.klook.com/images/fl_lossy.progressive,q_65/c_fill,w_1200,h_630/w_80,x_15,y_15,g_south_west,l_Klook_water_br_trans_yhcmh3/activities/qmgtdjekctlyucr8itqw/%C4%90%E1%BA%B7t%20tour%20%C4%91i%20V%E1%BB%8Bnh%20H%E1%BA%A1%20Long%20t%E1%BB%AB%20H%C3%A0%20N%E1%BB%99i.jpg",
       "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=800",
-      "https://images.unsplash.com/photo-1555577653-094899dad05c?w=800",
-      "https://images.unsplash.com/photo-1728468542081-43e31eddf2e8?w=800",
-      "https://ik.imagekit.io/tvlk/blog/2022/10/dia-diem-du-lich-ha-noi-1.jpg?tr=dpr-2,w-675",
-      "https://images.unsplash.com/photo-1509233725247-49e657c54213?w=800",
-    ],
+      "https://images.unsplash.com/photo-1509233725247-49e657c54213?w=800"],
     tags: ["Du lịch văn hóa", "Thiên nhiên", "Ẩm thực", "Nhiếp ảnh"],
     description: {
       overview:
@@ -65,8 +61,7 @@ export const toursData = {
       "Tham quan Văn Miếu Quốc Tử Giám - trường đại học đầu tiên của Việt Nam",
       "Thưởng thức ẩm thực Việt Nam chính gốc và tour ẩm thực đường phố",
       "Trải nghiệm biểu diễn Múa rối nước truyền thống",
-      "Lưu trú tại các khách sạn boutique được tuyển chọn kỹ lưỡng",
-    ],
+      "Lưu trú tại các khách sạn boutique được tuyển chọn kỹ lưỡng"],
     tourLocations: [
       {
         name: "Phố Cổ Hà Nội",
@@ -112,8 +107,7 @@ export const toursData = {
         coordinates: [20.8756, 107.1234],
         visitDay: 4,
         category: "culture",
-      },
-    ],
+      }],
     itinerary: [
       {
         day: 1,
@@ -144,24 +138,21 @@ export const toursData = {
         title: "Khởi hành",
         description:
           "Thời gian tự do mua sắm phút chót trước khi đưa ra sân bay.",
-      },
-    ],
+      }],
     included: [
       "4 đêm lưu trú",
       "Ăn sáng hàng ngày",
       "Hướng dẫn viên tiếng Anh chuyên nghiệp",
       "Tất cả phí tham quan",
       "Đưa đón sân bay",
-      "Du thuyền Vịnh Hạ Long",
-    ],
+      "Du thuyền Vịnh Hạ Long"],
     excluded: [
       "Vé máy bay quốc tế",
       "Bảo hiểm du lịch",
       "Chi phí cá nhân",
       "Bữa trưa và tối (trừ khi ghi chú)",
       "Tiền tips",
-      "Phí visa",
-    ],
+      "Phí visa"],
     hotel: {
       name: "Khách sạn Hanoi Pearl",
       address: "87 Mã Mây, Phố Cổ, Hà Nội",
@@ -195,8 +186,7 @@ export const toursData = {
         review:
           "Tour tuyệt vời với những địa điểm và trải nghiệm tuyệt vời. Chỉ có một lưu ý nhỏ là một số ngày cảm thấy hơi vội, nhưng nhìn chung rất khuyến khích tour này!",
         helpful: 15,
-      },
-    ],
+      }],
   },
 
   "danang-hoian": {
@@ -211,13 +201,7 @@ export const toursData = {
     images: [
       "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1080",
       "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=1080",
-      "https://cdn.tcdulichtphcm.vn/upload/3-2023/images/2023-03-14/1678795889-bana-hill-1657161996.jpg",
-      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1080",
-      "https://res.klook.com/image/upload/v1651485064/blog/j6xwdirr0wdtfcwvqhkk.webp",
-      "https://images.unsplash.com/photo-1587793258023-48fccfbd075f?w=1080",
-      "https://ik.imagekit.io/tvlk/blog/2022/06/shutterstock_1096141979.jpg?tr=dpr-2,w-675",
-      "https://top10danang.com/wp-content/uploads/2024/01/bai-tam-my-khe-da-nang.jpg",
-    ],
+      "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?w=1080"],
     tags: ["Biển đảo", "Di sản văn hóa", "Nghỉ dưỡng", "Ẩm thực"],
     description: {
       overview:
@@ -231,8 +215,7 @@ export const toursData = {
       "Thư giãn tại bãi biển Mỹ Khê - một trong những bãi biển đẹp nhất thế giới",
       "Tham quan Thánh địa Mỹ Sơn - Quần thể đền tháp Chăm Pa",
       "Trải nghiệm làm đèn lồng truyền thống Hội An",
-      "Thưởng thức đặc sản Cao Lầu, Mì Quảng và Bánh Bèo",
-    ],
+      "Thưởng thức đặc sản Cao Lầu, Mì Quảng và Bánh Bèo"],
     tourLocations: [
       {
         name: "Bãi biển Mỹ Khê",
@@ -275,8 +258,7 @@ export const toursData = {
         coordinates: [15.8794, 108.3273],
         visitDay: 3,
         category: "culture",
-      },
-    ],
+      }],
     itinerary: [
       {
         day: 1,
@@ -301,23 +283,20 @@ export const toursData = {
         title: "Tự do & Khởi hành",
         description:
           "Buổi sáng tự do mua sắm quà lưu niệm tại Hội An hoặc nghỉ dưỡng tại resort. Đưa ra sân bay Đà Nẵng.",
-      },
-    ],
+      }],
     included: [
       "3 đêm lưu trú tại khách sạn 4 sao",
       "Ăn sáng buffet hàng ngày",
       "Vé cáp treo Bà Nà Hills",
       "Vé tham quan Mỹ Sơn và Hội An",
       "Hướng dẫn viên chuyên nghiệp",
-      "Xe đưa đón theo chương trình",
-    ],
+      "Xe đưa đón theo chương trình"],
     excluded: [
       "Vé máy bay",
       "Bữa trưa và tối",
       "Chi phí cá nhân",
       "Bảo hiểm du lịch",
-      "Tiền tips cho HDV và tài xế",
-    ],
+      "Tiền tips cho HDV và tài xế"],
     hotel: {
       name: "Brilliant Hotel Đà Nẵng",
       address: "220 Võ Nguyên Giáp, Phước Mỹ, Đà Nẵng",
@@ -351,8 +330,7 @@ export const toursData = {
         review:
           "Thánh địa Mỹ Sơn rất ấn tượng với những tháp Chàm cổ kính. Hội An cũng xinh xắn với nhiều góc check-in đẹp. Tour rất đáng giá tiền!",
         helpful: 24,
-      },
-    ],
+      }],
   },
 
   "saigon-mekong": {
@@ -367,13 +345,8 @@ export const toursData = {
     images: [
       "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1080",
       "https://www.lottehotel.com/content/dam/lotte-hotel/lotte/saigon/accommodation/standard/deluxeroom/180712-52-2000-acc-saigon-hotel.jpg.thumb.768.768.jpg",
-      "https://images.unsplash.com/photo-1626914366294-25e4a8c3e724?w=1080",
-      "https://media.travelmedia.vn/destination/dstimgfw_339.jpg",
       "https://images.unsplash.com/photo-1552465011-b4e21bf6e79a?w=1080",
-      "https://images.unsplash.com/photo-1598946485440-2d4077f8a46f?w=1080",
-      "https://th.bing.com/th/id/R.d95de7f82fd8b21ab50ea51a58efd959?rik=DpyOhbIe00zCRA&riu=http%3a%2f%2fhoianexpress.com.vn%2fwp-content%2fuploads%2f2018%2f12%2fcho-noi-cai-rang-can-tho-1.jpg&ehk=vfBcKKXKl36GI8gn95yJDpwgNwHtxaGC%2fQH90XeZPxo%3d&risl=&pid=ImgRaw&r=0",
-      "https://baoquangninh.vn/uploads/Image/2022/09/14/1132462baoquangninh-diadaocuchi-14092022.jpg",
-    ],
+      "https://th.bing.com/th/id/R.d95de7f82fd8b21ab50ea51a58efd959?rik=DpyOhbIe00zCRA&riu=http%3a%2f%2fhoianexpress.com.vn%2fwp-content%2fuploads%2f2018%2f12%2fcho-noi-cai-rang-can-tho-1.jpg&ehk=vfBcKKXKl36GI8gn95yJDpwgNwHtxaGC%2fQH90XeZPxo%3d&risl=&pid=ImgRaw&r=0"],
     tags: ["Thành phố", "Văn hóa miền Nam", "Chợ nổi", "Ẩm thực"],
     description: {
       overview:
@@ -387,8 +360,7 @@ export const toursData = {
       "Du thuyền trên sông Tiền và sông Hậu",
       "Thăm vườn trái cây và thưởng thức trái cây tươi ngon",
       "Trải nghiệm đờn ca tài tử trên thuyền",
-      "Thưởng thức ẩm thực miền Tây: bánh xèo, cá lóc nướng, lẩu mắm",
-    ],
+      "Thưởng thức ẩm thực miền Tây: bánh xèo, cá lóc nướng, lẩu mắm"],
     tourLocations: [
       {
         name: "Dinh Độc Lập",
@@ -439,8 +411,7 @@ export const toursData = {
         coordinates: [10.3532, 106.3561],
         visitDay: 4,
         category: "culture",
-      },
-    ],
+      }],
     itinerary: [
       {
         day: 1,
@@ -465,23 +436,20 @@ export const toursData = {
         title: "Mỹ Tho - Sài Gòn",
         description:
           "Tham quan chùa Vĩnh Tràng, đi thuyền thăm cù lao Thới Sơn, thưởng thức mật ong, kẹo dừa. Trở về Sài Gòn, đưa ra sân bay.",
-      },
-    ],
+      }],
     included: [
       "3 đêm khách sạn 3-4 sao",
       "Ăn sáng hàng ngày",
       "Xe ô tô máy lạnh đưa đón",
       "Vé tham quan địa đạo Củ Chi",
       "Thuyền tham quan chợ nổi và cù lao",
-      "HDV tiếng Việt nhiệt tình",
-    ],
+      "HDV tiếng Việt nhiệt tình"],
     excluded: [
       "Vé máy bay",
       "Bữa trưa và tối",
       "Phí bắn súng tại Củ Chi",
       "Chi phí cá nhân",
-      "Bảo hiểm",
-    ],
+      "Bảo hiểm"],
     hotel: {
       name: "Liberty Central Saigon Riverside",
       address: "17 Tôn Đức Thắng, Q.1, TP. Hồ Chí Minh",
@@ -515,8 +483,7 @@ export const toursData = {
         review:
           "Trải nghiệm tốt, đi được nhiều nơi. Sài Gòn nhộn nhịp, miền Tây yên bình. Nếu có thêm thời gian ở chợ nổi sẽ tuyệt vời hơn. Overall rất recommend!",
         helpful: 18,
-      },
-    ],
+      }],
   },
 
   "sapa-hagiang": {
@@ -530,14 +497,10 @@ export const toursData = {
     centerCoordinates: [22.3364, 103.8438],
     images: [
       "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1080",
-      "https://statics.vinpearl.com/du-lich-sapa-2_1631866527.jpg",
       "https://images.unsplash.com/photo-1528127269322-539801943592?w=1080",
       "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=1080",
-      "https://ik.imagekit.io/tvlk/blog/2022/07/kinh-nghiem-du-lich-ha-giang-2.jpg?tr=dpr-2,w-675",
       "https://images.unsplash.com/photo-1544427920-c49ccfb85579?w=1080",
-      "https://dulichkhampha24.com/wp-content/uploads/2020/03/du-lich-ha-giang-11.jpg",
-      "https://static.vinwonders.com/production/cot-co-lung-cu-1.jpg",
-    ],
+      "https://dulichkhampha24.com/wp-content/uploads/2020/03/du-lich-ha-giang-11.jpg"],
     tags: ["Núi non", "Ruộng bậc thang", "Văn hóa dân tộc", "Phượt"],
     description: {
       overview:
@@ -551,8 +514,7 @@ export const toursData = {
       "Chinh phục đèo Mã Pì Lèng - Một trong tứ đại đỉnh đèo",
       "Đến cột cờ Lũng Cú - Cực Bắc Việt Nam",
       "Trải nghiệm homestay tại bản dân tộc",
-      "Thưởng thức đặc sản: thịt trâu gác bếp, rượu ngô, cơm lam",
-    ],
+      "Thưởng thức đặc sản: thịt trâu gác bếp, rượu ngô, cơm lam"],
     tourLocations: [
       {
         name: "Thị trấn Sapa",
@@ -609,8 +571,7 @@ export const toursData = {
         coordinates: [23.2156, 105.2483],
         visitDay: 5,
         category: "nature",
-      },
-    ],
+      }],
     itinerary: [
       {
         day: 1,
@@ -647,23 +608,20 @@ export const toursData = {
         title: "Hà Giang - Hà Nội",
         description:
           "Trở về Hà Nội, nghỉ dọc đường. Kết thúc hành trình đầy ấn tượng.",
-      },
-    ],
+      }],
     included: [
       "5 đêm khách sạn & homestay",
       "Ăn sáng hàng ngày",
       "Xe ô tô 16-29 chỗ máy lạnh",
       "Vé cáp treo Fansipan",
       "Phí tham quan theo chương trình",
-      "HDV theo suốt tuyến",
-    ],
+      "HDV theo suốt tuyến"],
     excluded: [
       "Vé máy bay/tàu",
       "Bữa trưa và tối",
       "Xe máy thuê tự phượt Hà Giang",
       "Chi phí cá nhân",
-      "Bảo hiểm",
-    ],
+      "Bảo hiểm"],
     hotel: {
       name: "Sapa Horizon Hotel & Homestay Hà Giang",
       address: "Sapa, Lào Cai & Hà Giang",
@@ -697,8 +655,7 @@ export const toursData = {
         review:
           "Tour phượt tuyệt vời! HDV nhiệt tình, lái xe an toàn. Cột cờ Lũng Cú, cao nguyên đá Đồng Văn đều rất ấn tượng. Sẽ giới thiệu bạn bè!",
         helpful: 33,
-      },
-    ],
+      }],
   },
   phuquoc: {
     id: "phuquoc",
@@ -710,14 +667,9 @@ export const toursData = {
     duration: "4 ngày 3 đêm",
     images: [
       "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=1080",
-      "https://static.vinwonders.com/production/bai-sao-phu-quoc-banner.jpg",
       "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=1080",
-      "https://statics.vinpearl.com/vinwonders-phu-quoc-2_1625911963.jpg",
       "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1080",
-      "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1080",
-      "https://static.vinwonders.com/production/hon-thom-phu-quoc-1.jpg",
-      "https://ik.imagekit.io/tvlk/blog/2023/01/kinh-nghiem-du-lich-phu-quoc-cover.jpg?tr=dpr-2,w-675",
-    ],
+      "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1080"],
     tags: ["Biển đảo", "Nghỉ dưỡng", "Lặn biển", "Resort cao cấp"],
     description: {
       overview:
@@ -731,8 +683,7 @@ export const toursData = {
       "Lặn biển ngắm san hô tại Nam đảo",
       "Bãi Sao - Bãi biển đẹp nhất Phú Quốc",
       "Khám phá làng chài Hàm Ninh, nhà thùng nước mắm",
-      "Cable car Hòn Thơm - Cáp treo vượt biển dài nhất thế giới",
-    ],
+      "Cable car Hòn Thơm - Cáp treo vượt biển dài nhất thế giới"],
     itinerary: [
       {
         day: 1,
@@ -757,23 +708,20 @@ export const toursData = {
         title: "Làng chài & Khởi hành",
         description:
           "Sáng thăm làng chài Hàm Ninh, nhà thùng nước mắm truyền thống. Mua đặc sản Phú Quốc. Đưa ra sân bay.",
-      },
-    ],
+      }],
     included: [
       "3 đêm resort 4-5 sao gần biển",
       "Ăn sáng buffet hàng ngày",
       "Vé VinWonders + Safari (1 ngày)",
       "Tour Nam đảo + lặn biển",
       "Vé cáp treo Hòn Thơm",
-      "Xe đưa đón theo chương trình",
-    ],
+      "Xe đưa đón theo chương trình"],
     excluded: [
       "Vé máy bay",
       "Bữa trưa và tối",
       "Chi phí cá nhân",
       "Bảo hiểm",
-      "Thuê thiết bị lặn chuyên nghiệp",
-    ],
+      "Thuê thiết bị lặn chuyên nghiệp"],
     hotel: {
       name: "Vinpearl Resort & Spa Phú Quốc",
       address: "Bãi Dài, Gành Dầu, Phú Quốc",
@@ -806,8 +754,7 @@ export const toursData = {
         review:
           "Phú Quốc xứng đáng là thiên đường nghỉ dưỡng! Bãi Sao đẹp như tranh vẽ. Chợ đêm sôi động, nhiều đồ ăn ngon. Resort 5 sao dịch vụ tốt!",
         helpful: 36,
-      },
-    ],
+      }],
   },
   nhatrang: {
     id: "nhatrang",
@@ -819,14 +766,10 @@ export const toursData = {
     duration: "3 ngày 2 đêm",
     images: [
       "https://images.unsplash.com/photo-1583417319070-4a69db38a482?w=1080",
-      "https://ik.imagekit.io/tvlk/blog/2022/11/kinh-nghiem-du-lich-nha-trang-1.jpg?tr=dpr-2,w-675",
       "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=1080",
       "https://static.vinwonders.com/production/vinpearl-land-nha-trang-1.jpg",
       "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=1080",
-      "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1080",
-      "https://statics.vinpearl.com/thap-ba-ponagar-nha-trang-0_1633421963.jpg",
-      "https://image.sggp.org.vn/w1000/Uploaded/2024/xbcnfqobxrcb/2022_05_03/z3400699776906-5af3fedb9f3e7f0d57ef8f7c2bff15c1-2592.jpg",
-    ],
+      "https://images.unsplash.com/photo-1506929562872-bb421503ef21?w=1080"],
     tags: ["Biển đảo", "Lặn biển", "Du lịch sinh thái", "Vui chơi giải trí"],
     description: {
       overview:
@@ -840,8 +783,7 @@ export const toursData = {
       "Lặn biển ngắm san hô tại Hòn Mun",
       "Tắm bùn khoáng tại I-Resort",
       "Tham quan tháp Bà Ponagar, chùa Long Sơn",
-      "Dạo biển Trần Phú và thưởng thức hải sản tươi ngon",
-    ],
+      "Dạo biển Trần Phú và thưởng thức hải sản tươi ngon"],
     itinerary: [
       {
         day: 1,
@@ -860,23 +802,20 @@ export const toursData = {
         title: "Vinpearl Land & Khởi hành",
         description:
           "Sáng tắm bùn khoáng I-Resort. Chiều sang Vinpearl Land chơi các trò cảm giác mạnh, tắm biển. Tối đưa ra sân bay.",
-      },
-    ],
+      }],
     included: [
       "2 đêm khách sạn 3-4 sao gần biển",
       "Ăn sáng hàng ngày",
       "Tour 4 đảo + thiết bị lặn cơ bản",
       "Vé cáp treo + Vinpearl Land",
       "Xe đưa đón sân bay và theo tour",
-      "HDV tiếng Việt",
-    ],
+      "HDV tiếng Việt"],
     excluded: [
       "Vé máy bay",
       "Bữa trưa và tối",
       "Phí tắm bùn I-Resort",
       "Chi phí cá nhân",
-      "Bảo hiểm",
-    ],
+      "Bảo hiểm"],
     hotel: {
       name: "Havana Nha Trang Hotel",
       address: "38 Trần Phú, Nha Trang",
@@ -909,7 +848,6 @@ export const toursData = {
         review:
           "Tour ổn, đi được nhiều nơi trong 3 ngày. Lặn biển ở Hòn Mun thú vị. Tháp Bà cũng đẹp. Nha Trang về đêm sôi động. Giá tour hợp lý!",
         helpful: 31,
-      },
-    ],
+      }],
   },
 };

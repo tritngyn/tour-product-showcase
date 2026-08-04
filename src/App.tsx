@@ -18,7 +18,7 @@ function App() {
         <Route element={<PrivateRoute />}>
           <Route element={<MainLayout />}>
             <Route path="/tours" element={<ProductList />} />
-            <Route path="/tours/:id" element={<ProductDetail />} />
+            <Route path="/tours/:slug" element={<ProductDetail />} />
           </Route>
         </Route>
 

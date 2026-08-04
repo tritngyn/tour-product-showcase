@@ -25,18 +25,18 @@ export const useTours = () => {
   return { tours, isLoading, error };
 };
 
-export const useTourDetail = (id: string | undefined) => {
+export const useTourDetail = (slug: string | undefined) => {
   const [tour, setTour] = useState<Tour | null>(null);
   const [isLoading, setIsLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    if (!id) return;
+    if (!slug) return;
     
     const fetchTour = async () => {
       try {
         setIsLoading(true);
-        const response = await api.get(`/product/${id}`);
+        const response = await api.get(`/product/${slug}`);
         setTour(response.data);
       } catch (err) {
         setError('Không tìm thấy thông tin tour.');
@@ -45,7 +45,7 @@ export const useTourDetail = (id: string | undefined) => {
       }
     };
     fetchTour();
-  }, [id]);
+  }, [slug]);
 
   return { tour, isLoading, error };
 };

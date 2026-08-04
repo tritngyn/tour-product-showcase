@@ -1,16 +1,15 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { useTourDetail } from '../hooks/useTours';
-import { toursData as detailedTours } from '../components/TourDetail/tourData';
 import { 
   ArrowLeft, MapPin, Calendar, CheckCircle2, Loader2, 
   Star, X, ChevronLeft, ChevronRight, Grid 
 } from 'lucide-react';
 
 export const ProductDetail = () => {
-  const { id } = useParams<{ id: string }>();
+  const { slug } = useParams<{ slug: string }>();
   const navigate = useNavigate();
-  const { tour: mockoonTour, isLoading, error } = useTourDetail(id);
+  const { tour: mockoonTour, isLoading, error } = useTourDetail(slug);
   
   const [showGallery, setShowGallery] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -37,35 +36,7 @@ export const ProductDetail = () => {
     );
   }
 
-  // Map ID cũ (1-6) sang ID mới để dự phòng trường hợp Mockoon chưa kịp reload data
-  const oldIdMap: Record<string, string> = {
-    '1': 'halong-hanoi',
-    '2': 'danang-hoian',
-    '3': 'phuquoc',
-    '4': 'sapa-hagiang',
-    '5': 'nha-trang',
-    '6': 'saigon-mekong'
-  };
-  const mappedId = id ? (oldIdMap[id] || id) : '';
-
-  // Use rich data if available, fallback to mockoon data
-  const richData = mappedId ? detailedTours[mappedId] : null;
-  const tour = richData ? {
-    id: richData.id,
-    name: richData.title,
-    destination: richData.location,
-    images: typeof richData.images[0] === 'string' ? richData.images : richData.images.map((i: any) => i.url || i),
-    description: richData.description?.overview || '',
-    detailDescription: richData.description?.detail || '',
-    price: richData.basePrice * 10000, 
-    duration: richData.duration,
-    category: richData.tags?.[0] || 'Khám phá',
-    rating: richData.rating,
-    reviewCount: richData.reviewCount,
-    tags: richData.tags,
-    highlights: richData.highlights,
-    itinerary: richData.itinerary,
-  } : mockoonTour;
+  const tour = mockoonTour;
 
   if (error || !tour) {
     return (
@@ -180,7 +151,7 @@ export const ProductDetail = () => {
           </div>
 
           {/* Navigation Tabs (Liquid style) */}
-          {richData && (
+          {tour.itinerary && tour.itinerary.length > 0 && (
             <div className="flex overflow-x-auto gap-2 mb-8 pb-2 scrollbar-hide">
               {['overview', 'itinerary'].map(tab => (
                 <button

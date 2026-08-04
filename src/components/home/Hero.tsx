@@ -1,4 +1,5 @@
 import { useNavigate } from 'react-router-dom';
+import { Header } from '../layout/Header';
 
 export const Hero = () => {
   const navigate = useNavigate();
@@ -32,29 +33,7 @@ export const Hero = () => {
 
       {/* Content wrapper (z-2) */}
       <div className="relative z-[2] max-w-[1360px] mx-auto">
-        {/* Navigation bar */}
-        <nav className="flex items-center justify-between px-20 pt-6 pb-4 max-md:px-6 max-md:pt-5">
-          {/* Left: wordmark */}
-          <span className="font-display text-[40px] max-md:text-[32px] text-black leading-none select-none">
-            vivu.
-          </span>
-
-          {/* Right: Login & CTA */}
-          <div className="flex items-center gap-8">
-            <button 
-              onClick={() => navigate('/login')}
-              className="max-md:hidden bg-transparent border-none cursor-pointer font-sans text-[15px] font-semibold uppercase text-[#292929] tracking-[0.04em] transition-opacity hover:opacity-55"
-            >
-              Đăng nhập
-            </button>
-            <button 
-              onClick={() => navigate('/tours')}
-              className="bg-[var(--color-wandor-dark)] text-[#fafafa] border-none cursor-pointer font-sans text-[15px] font-medium uppercase tracking-[0.04em] px-5 py-3.5 rounded-full transition-all hover:bg-teal-900 active:scale-95"
-            >
-              Tìm Tour
-            </button>
-          </div>
-        </nav>
+        <Header />
 
         {/* Hero body */}
         <div className="flex flex-col items-center px-6 pt-16 pb-24 text-center">

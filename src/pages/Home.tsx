@@ -9,9 +9,8 @@ export const Home = () => {
   const navigate = useNavigate();
 
   // Filter tours for carousels
-  const hotTours = tours.filter(t => t.price >= 5000000).slice(0, 6);
-  const internationalTours = tours.filter(t => t.category === 'Quốc tế').slice(0, 6);
-  const domesticTours = tours.filter(t => t.category === 'Trong nước').slice(0, 6);
+  const hotTours = tours.filter(t => t.price >= 3500000).slice(0, 6);
+  const domesticTours = tours;
 
   const CarouselSection = ({ title, data }: { title: string, data: typeof tours }) => (
     <div className="py-12 border-b border-gray-100 last:border-0">
@@ -54,7 +53,6 @@ export const Home = () => {
         ) : (
           <>
             {hotTours.length > 0 && <CarouselSection title="🔥 Tour Khám Phá Nổi Bật" data={hotTours} />}
-            {internationalTours.length > 0 && <CarouselSection title="✈️ Vi Vu Quốc Tế" data={internationalTours} />}
             {domesticTours.length > 0 && <CarouselSection title="🇻🇳 Trọn Vẹn Việt Nam" data={domesticTours} />}
           </>
         )}

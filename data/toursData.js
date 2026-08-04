@@ -1,7 +1,7 @@
 // Mock data cho tours với thông tin đầy đủ
 export const allToursData = [
   {
-    id: 1,
+    id: "halong-hanoi",
     name: "Khám phá Hà Nội & Vịnh Hạ Long",
     destination: "Hạ Long",
     region: "Miền Bắc",
@@ -18,7 +18,7 @@ export const allToursData = [
     highlights: ["Du thuyền 5 sao", "Phố cổ Hà Nội", "Múa rối nước"],
   },
   {
-    id: 2,
+    id: "danang-hoian",
     name: "Hội An Cổ Kính & Bà Nà Hills",
     destination: "Hội An",
     region: "Miền Trung",
@@ -35,7 +35,7 @@ export const allToursData = [
     highlights: ["Cầu Vàng", "Phố cổ Hội An", "Bãi biển Mỹ Khê"],
   },
   {
-    id: 3,
+    id: "phuquoc",
     name: "Phú Quốc - Thiên Đường Biển Đảo",
     destination: "Phú Quốc",
     region: "Miền Nam",
@@ -58,7 +58,7 @@ export const allToursData = [
     },
   },
   {
-    id: 4,
+    id: "sapa-hagiang",
     name: "Sapa - Chinh Phục Fansipan",
     destination: "Sapa",
     region: "Miền Bắc",
@@ -74,7 +74,7 @@ export const allToursData = [
     highlights: ["Đỉnh Fansipan", "Ruộng bậc thang", "Bản Cát Cát"],
   },
   {
-    id: 5,
+    id: "nhatrang",
     name: "Nha Trang - 4 Đảo & Vinpearl",
     destination: "Nha Trang",
     region: "Miền Trung",
@@ -97,7 +97,7 @@ export const allToursData = [
     },
   },
   {
-    id: 6,
+    id: "saigon-mekong",
     name: "Sài Gòn & Đồng bằng sông Cửu Long",
     destination: "Mỹ Tho",
     region: "Miền Nam",
@@ -111,29 +111,28 @@ export const allToursData = [
     type: ["Thành phố", "Ẩm thực"],
     description: "Khám phá Sài Gòn và miệt vườn sông nước miền Tây",
     highlights: ["Chợ nổi Cái Răng", "Địa đạo Củ Chi", "Phố đi bộ Nguyễn Huệ"],
-  },
-];
+  }];
 
 export const weatherSuggestions = {
   sunny: {
     icon: "☀️",
     temp: "32°C",
     condition: "Nắng đẹp",
-    tours: [1, 3, 5], // Tour biển
+    tours: ["halong-hanoi", "phuquoc", "nhatrang-vinpearl"], // Tour biển
     description: "Thời tiết hoàn hảo cho hoạt động biển",
   },
   rainy: {
     icon: "🌧️",
     temp: "24°C",
     condition: "Có mưa",
-    tours: [2, 6], // Tour văn hóa, thành phố
+    tours: ["danang-hoian", "saigon-mekong"], // Tour văn hóa, thành phố
     description: "Thích hợp khám phá văn hóa, ẩm thực",
   },
   cool: {
     icon: "⛅",
     temp: "18°C",
     condition: "Mát mẻ",
-    tours: [4], // Tour núi
+    tours: ["sapa-hagiang"], // Tour núi
     description: "Lý tưởng cho tour leo núi, trekking",
   },
 };
@@ -147,7 +146,7 @@ export const promotions = [
     validUntil: "31/12/2025",
     condition: "Áp dụng cho đoàn từ 4 người trở lên",
     image: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400",
-    tourIds: [3],
+    tourIds: ["phuquoc"],
   },
   {
     id: 2,
@@ -157,7 +156,7 @@ export const promotions = [
     validUntil: "30/11/2025",
     condition: "Booking trước 7 ngày",
     image: "https://images.unsplash.com/photo-1559592413-7cec4d0cae2b?w=400",
-    tourIds: [5],
+    tourIds: ["nhatrang"],
   },
   {
     id: 3,
@@ -167,9 +166,8 @@ export const promotions = [
     validUntil: "31/01/2026",
     condition: "Đặt 2 tour trở lên",
     image: "https://images.unsplash.com/photo-1668000018482-a02acf02b22a?w=400",
-    tourIds: [1],
-  },
-];
+    tourIds: ["halong-hanoi"],
+  }];
 
 export const topRatedDestinations = [
   {
@@ -199,5 +197,4 @@ export const topRatedDestinations = [
     reviews: 324,
     image: "https://images.unsplash.com/photo-1668000018482-a02acf02b22a?w=400",
     province: "Hà Nội",
-  },
-];
+  }];
